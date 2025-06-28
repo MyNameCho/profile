@@ -14,44 +14,48 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #023e8a;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #023e8a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 999;
 }
 
 .logo {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .nav-links li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.nav-links li a:hover {
-    color: #90e0ef;
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #90e0ef;
+  border-bottom: 2px solid #90e0ef;
 }
-
-.nav-links a.active {
-    border-bottom: 2px solid #90e0ef;
-    color: #90e0ef;
-}
-
 
 header {
     background: #0077b6;
